@@ -2,8 +2,8 @@ import dataClasses.Album
 import dataClasses.Song
 
 class PlayListImpl(
-    private val songs : MutableList<Song>,
-    private val albums : MutableList<Album>,
+    songs : MutableList<Song>,
+    albums : MutableList<Album>,
 ) : Playlist {
     private val playList : MutableList<Song> = mutableListOf()
     init{
@@ -22,14 +22,10 @@ class PlayListImpl(
         }
     }
     override fun addSong(song : Song){
-        songs.add(song)
-        // Обновляем плейлист
         playList.add(song)
     }
 
     override fun addAlbum(album : Album) {
-        albums.add(album)
-        // Обновляем плейлист
         playList.addAll(album.songList)
 
     }
