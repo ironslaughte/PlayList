@@ -13,8 +13,7 @@ fun main() {
             Song(SongGenre.ELECTRONIC,Artist("Fedor","STED.D"),"Жатва")))
 
     val playList = PlayListImpl(mutableListOf(song1,song2), mutableListOf(album1,album2))
-    // add songs to play ist
-    // add albums to playlist
+
     playList.shuffle()
     println(playList)
     playList.shuffle()
