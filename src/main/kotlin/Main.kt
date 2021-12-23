@@ -8,7 +8,7 @@ fun main() {
         mutableListOf(
             Song(SongGenre.POP, Artist("Egor", "EGOR NATS"), "Словонепробиваемая"),
             Song(SongGenre.POP, Artist("Egor", "EGOR NATS"), "Ты всегда одна"),
-            Song(SongGenre.BLUES, Artist("Egor", "EGOR NATS"), "Уходи")
+            Song(SongGenre.BLUES, Artist("Egor", "EGOR NATS"), "Уходи_2")
         )
     )
     val album2 = Album(
@@ -21,7 +21,6 @@ fun main() {
     )
 
     val playList = PlayListImpl(mutableListOf(song1, song2), mutableListOf(album1, album2))
-
     playList.shuffle()
     println(playList)
     playList.shuffle()
